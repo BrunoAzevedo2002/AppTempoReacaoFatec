@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTempoReacao.ListaTempo"
+             NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Content>
+
+
+        <StackLayout BackgroundColor="Orange">
+            <StackLayout Padding="0">
+                <Grid>
+                    <StackLayout Padding="0" Margin="15,15,15,0" HorizontalOptions="FillAndExpand">
+                        <Frame  BackgroundColor="White" HeightRequest="400" HasShadow="True" Padding="0" CornerRadius="30">
+
+                            <StackLayout Padding="5" Margin="0,10,0,0">
+                                <Label x:Name="Cabecalho" Text="Seus 10 últimos tempos:" FontAttributes="Bold" FontSize="24" HorizontalTextAlignment="Center" TextColor="DarkOrange"/>
+
+                                <Label x:Name="Tempo1" Text="584 Milissegundos" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="Black"/>
+                                <Label x:Name="Tempo2" Text="635 Milissegundos" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="Black"/>
+                                <Label x:Name="Tempo3" Text="356 Milissegundos" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="Black"/>
+                                <Label x:Name="Tempo4" Text="642 Milissegundos" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="Black"/>
+                                <Label x:Name="Tempo5" Text="346 Milissegundos" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="Black"/>
+                                <Label x:Name="Tempo6" Text="376 Milissegundos" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="Black"/>
+                                <Label x:Name="Tempo7" Text="465 Milissegundos" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="Black"/>
+                                <Label x:Name="Tempo8" Text="442 Milissegundos" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="Black"/>
+                                <Label x:Name="Tempo9" Text="298 Milissegundos" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="Black"/>
+                                <Label x:Name="Tempo10" Text="545 Milissegundos" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="Black"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </Grid>
+                <Grid>
+                    <StackLayout Padding="0" Margin="15,10,15,0" HorizontalOptions="FillAndExpand">
+                        <Frame  BackgroundColor="White" HeightRequest="210" HasShadow="True" Padding="0" Margin="0" CornerRadius="30">
+
+                            <StackLayout Padding="5" Margin="5">
+                                <Label x:Name="CabecalhoMelhorTempo" Text="Seu melhor tempo:" FontAttributes="Bold" FontSize="36" Margin="0,10,0,0" HorizontalTextAlignment="Center" TextColor="DarkOrange"/>
+                                <Label x:Name="MelhorTempo" Text="298 Milissegundos" FontSize="28" Margin="5" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="RED"/>
+                                <Button x:Name="VoltarTeste" Text="Voltar para o Teste" Pressed="VoltarTeste_Pressed" FontAttributes="Bold" BorderColor="Black" BorderWidth="1" TextColor="black" WidthRequest="300" HeightRequest="50" FontSize="24" VerticalOptions="Center" HorizontalOptions="Center" CornerRadius="15" Margin="0,10,0,0" BackgroundColor="Orange" />
+
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </Grid>
+
+                </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

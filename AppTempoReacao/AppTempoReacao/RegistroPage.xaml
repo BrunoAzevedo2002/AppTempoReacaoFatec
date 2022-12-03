@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTempoReacao.RegistroPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+
+        <StackLayout BackgroundColor="Orange">
+            <StackLayout Padding="0">
+                <Grid>                   
+                    <StackLayout Padding="0" Margin="15,45,15,0" HorizontalOptions="FillAndExpand">
+                        <Frame  BackgroundColor="White" HeightRequest="570" HasShadow="True" Padding="0" Margin="0" CornerRadius="30">
+
+                            <StackLayout Padding="20" Margin="15,10">
+                                <Label x:Name="Cabecalho" Text="Registre-se para salvar seus melhores tempos!" FontAttributes="Bold" 
+                            FontSize="24" Margin="5" HorizontalTextAlignment="Center" TextColor="darkorange"/>
+
+                                <Label Text="Novo Usuário" FontSize="18" TextColor="Black" HorizontalTextAlignment="Center" FontAttributes="Bold" />
+                                <Entry Text="" Placeholder="Escreva seu usuário" FontAttributes="Bold" x:Name="txtNovoUsuarioEntry" />
+
+                                <Label Text="Seu Email" FontSize="18" TextColor="Black" HorizontalTextAlignment="Center" FontAttributes="Bold" />
+                                <Entry Text="" Placeholder="Escreva seu e-mail" FontAttributes="Bold" x:Name="txtNovoEmailEntry" />
+
+                                <Label Text="Senha" FontSize="18" TextColor="Black" HorizontalTextAlignment="Center" FontAttributes="Bold" />
+                                <Entry Text="" Placeholder="Escolha sua senha" FontAttributes="Bold"  IsPassword="True" x:Name="txtNovaSenhaEntry" />
+
+                                <Label Text="Confirmar Senha" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="Black" />
+                                <Entry Text="" Placeholder="Confirme sua senha" FontAttributes="Bold" IsPassword="True" x:Name="txtConfirmaSenhaEntry" />
+
+                                <Button Text="Cadastrar" WidthRequest="300" FontAttributes="Bold" BorderColor="Black" BorderWidth="1" HeightRequest="50" FontSize="24" VerticalOptions="Center" Margin="0,15,0,0" HorizontalOptions="Center" CornerRadius="15" BackgroundColor="orange" x:Name="btnLogin" Clicked="btnRegistrar_Clicked"/>
+                                <Button Text="Já é cadastrado? Faça Login!" FontAttributes="Bold" BackgroundColor="White" TextColor="darkorange" HorizontalOptions="Center" FontSize="19" Margin="0,5,0,0" Clicked="ButtonRegistroLogin_Clicked"/>
+
+
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

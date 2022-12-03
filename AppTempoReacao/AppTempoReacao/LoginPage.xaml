@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTempoReacao.LoginPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Content>
+
+        <StackLayout BackgroundColor="Orange">
+            <StackLayout Padding="0">
+                <Grid>
+                    <StackLayout Padding="0" Margin="15,90,15,0" HorizontalOptions="FillAndExpand">
+                        <Frame  BackgroundColor="White" HeightRequest="460" HasShadow="True" Padding="0" Margin="0" CornerRadius="30">
+
+                            <StackLayout Padding="20" Margin="10">
+                                <Label x:Name="Cabecalho" Text="Faça Login para salvar seus melhores tempos!" FontAttributes="Bold"
+                                           FontSize="24" Margin="10" HorizontalTextAlignment="Center" TextColor="darkorange"/>
+
+                                <Label Text="Usuário" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center" FontAttributes="Bold" />
+                                <Entry Text="" Placeholder="Escreva seu usuário" FontAttributes="Bold" x:Name="txtUsuarioEntry" />
+
+                                <Label Text="Senha" FontSize="20" Margin="0,10,0,0" HorizontalTextAlignment="Center" TextColor="Black" FontAttributes="Bold" />
+                                <Entry Text="" Placeholder="Escreva sua senha" FontAttributes="Bold" IsPassword="True" x:Name="txtSenhaEntry" />
+
+                                <Button Text="Entrar" WidthRequest="300" HeightRequest="50" FontSize="24" VerticalOptions="Center" HorizontalOptions="Center" BorderColor="Black" BorderWidth="1" CornerRadius="15" Margin="0,10,0,0" FontAttributes="Bold" BackgroundColor="orange" x:Name="btnLogin" Clicked="Button_LoginClicked" />
+
+                                <Button Text="Não é cadastrado? Registre-se clicando aqui!" FontAttributes="Bold" BackgroundColor="White" TextColor="darkorange" HorizontalOptions="Center" FontSize="20" Margin="0,10,0,0" Clicked="ButtonRegistro_Clicked" />
+
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </Grid>
+             </StackLayout>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

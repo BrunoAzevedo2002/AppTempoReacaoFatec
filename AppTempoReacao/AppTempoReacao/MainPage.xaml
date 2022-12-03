@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTempoReacao.MainPage"
+             NavigationPage.HasNavigationBar="False">
+    
+
+    <StackLayout>
+        <Label x:Name="Cabecalho" Text="Clique no quadrado vermelho, espere, e clique o mais rápido que conseguir quando ficar verde!" FontAttributes="Bold" TextDecorations="Underline" FontSize="24" Margin="10" HorizontalTextAlignment="Center" TextColor="black"/>
+
+        <Button x:Name="BotaoReacao" 
+                Text="Clique!" 
+                Clicked="BotaoReacao_Pressed" 
+                WidthRequest="390" 
+                HeightRequest="340" FontAttributes="Bold"
+                FontSize="48"
+                VerticalOptions="Center" HorizontalOptions="Center" CornerRadius="10"  BackgroundColor="red" Margin="5"/>
+
+        <Label x:Name="PreTempoReacao" Text="" TextColor="Black" FontAttributes="Bold" FontSize="24" HorizontalOptions="Center" />
+
+        <Label x:Name="TempoReacao" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize ="48" Text = "" TextDecorations = "Underline"
+            TextColor="DarkOrange" Margin="0,0,0,5"/>
+
+        <Button x:Name="SalvarTempo" Text="Salve seus Tempos" Pressed="SalvarTempo_Pressed" BorderColor="Black" BorderWidth="1" TextColor="black" WidthRequest="300" FontAttributes="Bold" HeightRequest="50" FontSize="24" VerticalOptions="Center" Margin="0,5,0,0" HorizontalOptions="Center" CornerRadius="15" BackgroundColor="orange" />
+
+    </StackLayout>
+
+</ContentPage>
