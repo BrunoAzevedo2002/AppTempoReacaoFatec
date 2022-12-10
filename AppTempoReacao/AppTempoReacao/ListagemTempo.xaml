@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTempoReacao.Tempos">
+    <ContentPage.Content>
+        <StackLayout>
+
+
+            <ListView x:Name="lst_tempo" ItemSelected="lst_tempo_ItemSelected" >
+                <ListView.Header> 
+                    <Grid ColumnDefinitions="*, *" RowDefinitions="Auto">
+                        <Label Grid.Row="0" Grid.Column="0" FontAttributes="Bold" Text="TEMPO" />
+                        <Label Grid.Row="0" Grid.Column="1" FontAttributes="Bold" Text="DATA"  />
+                    </Grid>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+
+                            
+                            <Grid ColumnDefinitions="*, *" RowDefinitions="Auto">
+                                    <Label Grid.Row="0" Grid.Column="0" Text="{Binding Tempo}" />
+                                    <Label Grid.Row="0" Grid.Column="1" Text="{Binding Data}" />
+                                </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

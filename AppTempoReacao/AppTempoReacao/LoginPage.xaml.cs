@@ -25,7 +25,7 @@ namespace AppTempoReacao
             if (UsuarioEntry == "Kevedo" && SenhaEntry == "123")
             {
                 await DisplayAlert("Bem Vindo!", "Logado com sucesso!", "CONTINUAR");
-                await Navigation.PushAsync(new ListaTempo());
+                await Navigation.PushAsync(new Tempos());
             }
             else
             {

@@ -53,6 +53,12 @@ namespace AppTempoReacao
                 BotaoReacao.Text = "Clique!";
                 BotaoReacao.BackgroundColor = Color.Red;
                 button_count = 0;
+
+                await App.Database.Insert(new Model.Tempos
+                {
+                    Tempo = resultado,
+                    Data = DateTime.Now,
+                }) ;
             }
         }
 

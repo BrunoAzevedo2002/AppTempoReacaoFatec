@@ -9,7 +9,7 @@ namespace AppTempoReacao.Model
     {
         [AutoIncrement,PrimaryKey]
         public int Id { get; set; }
-        public string Valor { get; set; }
-        public DateTime DataTeste { get; set; }
+        public string Tempo { get; set; }
+        public DateTime Data { get; set; }
     }
 }
